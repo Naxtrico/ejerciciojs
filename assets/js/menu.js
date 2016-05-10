@@ -30,7 +30,9 @@ $('#menu-container nav > ul > li > a').click(function(e) {
   });
 
   $('#menu-container li').hover(function() {
+    if($(window).width() >= 990) {
     $(this).find('.sub-menu').fadeToggle(100);
+  }
   });
   
 //Establecer un resize para que se vea el menú hamburguesa
@@ -55,22 +57,17 @@ $(window).resize(function() {
 //Ejercicio 3. No he conseguido hacer que funcione, lo he intentado.
 
  $('#menu-container nav > ul > li > a').click(function(e) {
+  $('.sub-menu').show();
   if ($(this).siblings().is(':visible')) {
     
   }
 });
+ });
 
 
 
 
 
-
-});
-
-
-
-  
-   
 
 
 

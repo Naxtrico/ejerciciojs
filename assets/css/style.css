@@ -11,3 +11,10 @@
   padding: 40px 0;
   cursor: pointer;
 }
+
+#logo-container a {
+	transform: translateY(-50%);
+	top: 50%;
+	position: absolute;
+	width: 79px;
+}
